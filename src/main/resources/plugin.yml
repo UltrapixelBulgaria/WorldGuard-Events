@@ -2,6 +2,6 @@ name: "WorldGuardEvents"
 description: Provides other plugins with valuable events concerning WorldGuard regions.
 version: ${project.version}
 api-version: 1.15
-main: net.raidstone.wgevents.WorldGuardEvents
+main: org.proto68.wgevents.WorldGuardEvents
 author: UltrapixelBG
 depend: [WorldGuard]

@@ -1,4 +1,4 @@
-package net.raidstone.wgevents.events;
+package org.proto68.wgevents.events;
 
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import org.bukkit.Bukkit;
@@ -19,7 +19,7 @@ import java.util.UUID;
  * @version 1.0.0
  * @since 2/24/19
  */
-public class RegionsEnteredEvent extends Event implements Cancellable {
+public class RegionsLeftEvent extends Event implements Cancellable {
  
 	private static final HandlerList handlers = new HandlerList();
 
@@ -28,23 +28,21 @@ public class RegionsEnteredEvent extends Event implements Cancellable {
 	private final UUID uuid;
 	private final Set<ProtectedRegion> regions;
 	private final Set<String> regionsNames;
-	
-    /**
-     * This even is fired whenever one or several regions are entered.
-     * @param playerUUID The UUID of the player entering the regions.
+
+	/**
+     * This even is fired whenever one or several regions are left.
+     * @param playerUUID The UUID of the player leaving the regions.
      * @param regions Set of WorldGuard's ProtectedRegion regions.
      */
-	public RegionsEnteredEvent(UUID playerUUID, @Nullable Set<ProtectedRegion> regions)
+	public RegionsLeftEvent(UUID playerUUID, @Nullable Set<ProtectedRegion> regions)
 	{
 		this.uuid = playerUUID;
 		this.regionsNames = new HashSet<>();
 		this.regions = new HashSet<>();
 		
-		if(regions != null)
-		{
+		if (regions != null) {
 			this.regions.addAll(regions);
-			for(ProtectedRegion region : regions)
-			{
+			for (ProtectedRegion region : regions) {
 				this.regionsNames.add(region.getId());
 			}
 		}
@@ -54,7 +52,7 @@ public class RegionsEnteredEvent extends Event implements Cancellable {
 	public static HandlerList getHandlerList() {
 		return handlers;
 	}
-
+	
 	@NotNull
 	public HandlerList getHandlers() {
 		return handlers;

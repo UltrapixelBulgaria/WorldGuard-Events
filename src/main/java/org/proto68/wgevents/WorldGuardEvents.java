@@ -1,4 +1,4 @@
-package net.raidstone.wgevents;
+package org.proto68.wgevents;
 
 import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldguard.WorldGuard;

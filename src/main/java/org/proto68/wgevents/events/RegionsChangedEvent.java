@@ -1,4 +1,4 @@
-package net.raidstone.wgevents.events;
+package org.proto68.wgevents.events;
 
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import org.bukkit.Bukkit;

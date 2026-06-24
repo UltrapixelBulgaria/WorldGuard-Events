@@ -1,4 +1,4 @@
-package net.raidstone.wgevents;
+package org.proto68.wgevents;
 
 import com.sk89q.worldedit.util.Location;
 import com.sk89q.worldguard.LocalPlayer;
@@ -7,10 +7,10 @@ import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import com.sk89q.worldguard.session.MoveType;
 import com.sk89q.worldguard.session.Session;
 import com.sk89q.worldguard.session.handler.Handler;
-import net.raidstone.wgevents.events.*;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
+import org.proto68.wgevents.events.*;
 
 import java.util.Set;
 
