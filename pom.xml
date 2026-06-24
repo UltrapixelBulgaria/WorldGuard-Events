@@ -5,7 +5,7 @@
 
     <groupId>com.github.UltrapixelBulgaria</groupId>
     <artifactId>WorldGuardEvents</artifactId>
-    <version>26.1.2</version>
+    <version>26.2</version>
 
     <name>WorldGuard Events</name>
     <description>Plugin that fires events when a player enters or leaves a WorldGuard area.</description>
