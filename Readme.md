@@ -98,18 +98,15 @@ public class TestPlugin extends JavaPlugin implements Listener {
  
 ```
 
-## Maven dependency
-This plugin is located in the Maven Central repository, so you simply need to add it as dependency.
+## Jitpack dependency
+You can reference this plugin through jitpack repository. More info [here](https://jitpack.io/#UltrapixelBulgaria/WorldGuard-Events/v26.1.2).
+Example for gradle projects:
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
-```xml
-<dependency>
-    <groupId>net.raidstone</groupId>
-    <artifactId>WorldGuardEvents</artifactId>
-    <version>1.18.1</version>
-    <scope>provided</scope>
-</dependency>
+dependencies {
+    compileOnly 'com.github.UltrapixelBulgaria:WorldGuard-Events:v26.1.2'
+}
 ```
-    
-## [Spigot page](https://www.spigotmc.org/resources/worldguard-events.65176/)
-
-### If you like this plugin, don't forget to rate it, to help other people discover it !
