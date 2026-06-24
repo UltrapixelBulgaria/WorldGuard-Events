@@ -3,5 +3,5 @@ description: Provides other plugins with valuable events concerning WorldGuard r
 version: ${project.version}
 api-version: 1.15
 main: net.raidstone.wgevents.WorldGuardEvents
-author: Weby
+author: UltrapixelBG
 depend: [WorldGuard]
